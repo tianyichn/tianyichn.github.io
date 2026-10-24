@@ -1,0 +1,31 @@
+---
+title: Request a quote
+permalink: /request/
+---
+<div class="wrap page request">
+  <h1>Request a quote</h1>
+  <p class="lede">Tell us about your samples and the measurement you need. We reply with questions or a quote.</p>
+
+  <div class="request-grid">
+    <div>
+      {% if site.request_form_url != "" %}
+      <iframe class="request-form" src="{{ site.request_form_url }}" title="Service request form" loading="lazy"></iframe>
+      <p class="small">Form not loading? <a href="{{ site.request_form_url }}" target="_blank" rel="noopener">Open it in a new tab</a> or email <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>.</p>
+      {% else %}
+      <p><a class="btn btn-primary" href="mailto:{{ site.contact_email }}?subject=Service%20request&body=Name%20and%20organization%3A%0AUser%20type%20(academic%2C%20government%2C%20industry)%3A%0AService%20needed%3A%0AMaterial%3A%0ARadioactive%20(yes%2Fno%2C%20isotopes)%3A%0ANumber%20of%20samples%3A%0ADeadline%3A%0AFunding%20or%20PO%20status%3A%0A">Email your request</a></p>
+      <p class="small">This opens an email to {{ site.contact_email }} with the details we need already listed.</p>
+      {% endif %}
+    </div>
+    <aside class="checklist">
+      <h2>What to include</h2>
+      <ul>
+        <li>Your name, organization and user type (academic, government or industry)</li>
+        <li>The service you need, or the question you want answered</li>
+        <li>Material, sample size and number of samples</li>
+        <li>Whether any sample is radioactive, and which isotopes</li>
+        <li>Your deadline</li>
+        <li>Whether you have a purchase order or funding in place</li>
+      </ul>
+    </aside>
+  </div>
+</div>

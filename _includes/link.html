@@ -1,0 +1,4 @@
+{%- if include.url == "SCHOLAR" -%}{{ site.scholar_url }}
+{%- elsif include.url == "LINKEDIN" -%}{{ site.linkedin_url }}
+{%- elsif include.url contains "://" -%}{{ include.url }}
+{%- else -%}{{ include.url | relative_url }}{%- endif -%}

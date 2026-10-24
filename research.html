@@ -1,0 +1,28 @@
+---
+title: Research
+permalink: /research/
+---
+<div class="wrap page">
+  <h1>Research</h1>
+  <p class="lede">We connect what happens inside a material’s microstructure to how the whole component performs, so that new nuclear and energy materials can be designed and qualified faster.</p>
+
+  <h2>Our approach</h2>
+  <ol class="steps">
+    <li><b>Observe.</b> In-situ SEM experiments reveal which microstructural features and deformation processes matter.</li>
+    <li><b>Measure.</b> Micromechanical tests extract local properties and mechanisms.</li>
+    <li><b>Model.</b> Those measurements feed mechanistic models that predict performance with higher fidelity than empirical fits.</li>
+  </ol>
+
+  <h2>Themes</h2>
+  <div class="themes">
+    {% for t in site.data.research %}
+    <section class="theme">
+      {% if t.image != "" %}<img src="{{ t.image | relative_url }}" alt="">{% endif %}
+      <h3>{{ t.title }}</h3>
+      <p>{{ t.summary }}</p>
+    </section>
+    {% endfor %}
+  </div>
+
+  <p class="more"><a class="btn" href="{{ site.scholar_url }}" target="_blank" rel="noopener">All publications on Google Scholar</a></p>
+</div>

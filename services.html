@@ -1,0 +1,21 @@
+---
+title: Services
+permalink: /services/
+---
+<div class="wrap page">
+  <h1>Services</h1>
+  <p class="lede">Our instruments are available to external users from universities, national laboratories and industry. Oregon State University bills for services at approved rates.</p>
+  <ul class="service-list">
+    {% assign services = site.services | sort: "order" %}
+    {% for s in services %}
+    <li>
+      <a href="{{ s.url | relative_url }}">
+        <span class="sl-title">{{ s.title }}</span>
+        <span class="sl-summary">{{ s.summary }}</span>
+        {% include status.html status=s.status %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p>Not sure which technique fits? <a href="{{ '/request/' | relative_url }}">Describe your problem</a> and we will suggest one.</p>
+</div>

@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-name">{{ site.long_name }}</p>
+      <p>{{ site.institution }}</p>
+      <p>{{ site.address }}</p>
+    </div>
+    <div>
+      <p><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+      <p><a href="{{ site.scholar_url }}" target="_blank" rel="noopener">Publications on Google Scholar</a></p>
+      <p><a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">News on LinkedIn</a></p>
+    </div>
+    <div>
+      <p>Services are billed by Oregon State University at approved rates.</p>
+      <p><a href="{{ '/request/' | relative_url }}">Request a quote</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  (function () {
+    var b = document.querySelector('.nav-toggle'), n = document.getElementById('nav');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      var open = b.getAttribute('aria-expanded') === 'true';
+      b.setAttribute('aria-expanded', String(!open));
+      n.classList.toggle('open', !open);
+    });
+  })();
+</script>

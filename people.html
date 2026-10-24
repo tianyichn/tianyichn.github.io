@@ -1,0 +1,46 @@
+---
+title: People
+permalink: /people/
+---
+{%- assign p = site.data.people -%}
+<div class="wrap page">
+  <h1>People</h1>
+
+  <section class="pi">
+    {% if p.pi.photo != "" %}<img class="avatar lg" src="{{ p.pi.photo | relative_url }}" alt="{{ p.pi.name }}">{% else %}<span class="avatar lg" aria-hidden="true">TC</span>{% endif %}
+    <div>
+      <h2>{{ p.pi.name }}</h2>
+      <p class="role">{{ p.pi.role }}</p>
+      <p>{{ p.pi.bio }}</p>
+      <p><a href="mailto:{{ p.pi.email }}">{{ p.pi.email }}</a></p>
+    </div>
+  </section>
+
+  {% assign groups = "graduate,undergraduate" | split: "," %}
+  {% for g in groups %}
+  {% assign members = p[g] %}
+  {% if members.size > 0 %}
+  <h2>{% if g == "graduate" %}Graduate students{% else %}Undergraduate researchers{% endif %}</h2>
+  <ul class="members">
+    {% for m in members %}
+    <li>
+      {% if m.photo != "" %}<img class="avatar" src="{{ m.photo | relative_url }}" alt="{{ m.name }}">{% else %}<span class="avatar" aria-hidden="true">{{ m.name | slice: 0 }}</span>{% endif %}
+      <div><b>{{ m.name }}</b><br><span class="role">{{ m.role }}</span><br>{{ m.topic }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endfor %}
+
+  {% if p.alumni.size > 0 %}
+  <h2>Alumni</h2>
+  <ul class="alumni">
+    {% for a in p.alumni %}<li><b>{{ a.name }}</b>, {{ a.degree }}. Now at {{ a.now }}.</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  <section class="join">
+    <h2>Join us</h2>
+    <p>TODO: what you look for in prospective graduate and undergraduate students, and how to contact you.</p>
+  </section>
+</div>

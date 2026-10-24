@@ -1,0 +1,31 @@
+# Group members. Put photos in assets/img/people/ (square, ~600 px).
+# Leave photo empty to show initials instead.
+pi:
+  name: Tianyi Chen, Ph.D.
+  role: Associate Professor, School of Nuclear Science and Engineering
+  photo: ""
+  bio: >-
+    TODO: two or three sentences on background and research interests.
+  email: TODO@oregonstate.edu
+
+graduate:
+  - name: TODO Student Name
+    role: Ph.D. student
+    topic: TODO one-line research topic
+    photo: ""
+  - name: TODO Student Name
+    role: Ph.D. student
+    topic: TODO one-line research topic
+    photo: ""
+
+undergraduate:
+  - name: TODO Student Name
+    role: Undergraduate researcher
+    topic: TODO one-line project
+    photo: ""
+
+alumni: []
+# alumni:
+#   - name: Name
+#     degree: Ph.D. 2026
+#     now: Where they work now

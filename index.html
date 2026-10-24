@@ -1,0 +1,57 @@
+---
+title: Home
+body_class: home
+---
+<section class="hero wrap">
+  <div class="hero-text">
+    <h1>Mechanical and thermal testing at the scale of the microstructure</h1>
+    <p class="lede">The ATOM Lab at Oregon State University offers SEM/FIB, in-situ mechanical testing, sample preparation, glovebox work and thermal analysis to academic, government and industry users — including work on radioactive materials.</p>
+    <p class="actions">
+      <a class="btn btn-primary" href="{{ '/request/' | relative_url }}">Request a quote</a>
+      <a class="btn" href="{{ '/services/' | relative_url }}">Browse services</a>
+    </p>
+  </div>
+  <figure class="micrograph">
+    <img src="{{ '/assets/img/hero.jpg' | relative_url }}" alt="Grain structure of a polycrystalline metal">
+    <figcaption class="databar" aria-label="Key capabilities">
+      <span><b>In-situ SEM testing</b> to 800 °C</span>
+      <span><b>STA/MS</b> to 1600 °C</span>
+      <span><b>Argon glovebox</b> nuclear-grade</span>
+      <span><b>Licensed</b> for radioactive materials</span>
+      <span class="scalebar" aria-hidden="true"><i></i>20 µm</span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="wrap block">
+  <h2>Services</h2>
+  <ul class="service-list">
+    {% assign services = site.services | sort: "order" %}
+    {% for s in services %}
+    <li>
+      <a href="{{ s.url | relative_url }}">
+        <span class="sl-title">{{ s.title }}</span>
+        <span class="sl-summary">{{ s.summary }}</span>
+        {% include status.html status=s.status %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wrap block steps-block">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Tell us what you need.</b> Describe your material, the measurement and your timeline.</li>
+    <li><b>Get a quote.</b> We confirm feasibility and send a quote, usually within TODO business days.</li>
+    <li><b>Send samples.</b> We schedule the work once OSU has your purchase order or agreement.</li>
+    <li><b>Receive results.</b> Data and a short summary arrive by email; OSU invoices you.</li>
+  </ol>
+  <p><a href="{{ '/how-it-works/' | relative_url }}">Shipping, radioactive samples and FAQ</a></p>
+</section>
+
+<section class="wrap block research-teaser">
+  <h2>Research</h2>
+  <p>We study how microstructure controls the mechanical and thermal performance of nuclear fuels and structural materials, from fundamental radiation effects to AI-assisted qualification of new materials.</p>
+  <p><a href="{{ '/research/' | relative_url }}">Our research</a><br><a href="{{ site.scholar_url }}" target="_blank" rel="noopener">Publications</a></p>
+</section>

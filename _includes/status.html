@@ -1,0 +1,4 @@
+{%- assign st = include.status | default: "available" -%}
+<span class="status status-{{ st }}">
+  {%- if st == "available" %}Accepting requests{% elsif st == "limited" %}Limited availability{% else %}Temporarily unavailable{% endif -%}
+</span>

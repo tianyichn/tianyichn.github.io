@@ -1,0 +1,17 @@
+# Research themes shown on the Research page.
+- title: Nuclear fuel
+  summary: >-
+    TODO: one paragraph on fuel studies — which materials, which properties,
+    and why microstructure-level measurements matter for fuel performance.
+  image: ""
+- title: Fundamental radiation effects
+  summary: >-
+    TODO: e.g. microscale fracture toughness of ion-irradiated tungsten and
+    how irradiation defects change local mechanical behavior.
+  image: ""
+- title: AI for mechanisms and materials qualification
+  summary: >-
+    TODO: e.g. machine-learning displacement tracking on in-situ SEM images,
+    and using local measurements to build mechanistic models that speed up
+    qualification of new materials.
+  image: ""

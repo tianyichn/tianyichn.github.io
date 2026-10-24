@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------
+# ATOM Lab website — site-wide settings
+# Most routine edits happen in _data/ and _services/, not here.
+# ---------------------------------------------------------------
+title: ATOM Lab
+long_name: Advanced Thermophysical and Operando Mechanics Lab
+institution: School of Nuclear Science and Engineering, Oregon State University
+description: >-
+  SEM/FIB, in-situ mechanical testing, sample preparation, glovebox work and
+  simultaneous thermal analysis for academic, government and industry users,
+  including radioactive materials.
+
+# If the repo is named <username>.github.io, leave baseurl empty.
+# If it is any other name (e.g. "atom-lab"), set baseurl: "/atom-lab".
+baseurl: ""
+url: ""   # e.g. "https://atom-lab.github.io" (used for links in search results)
+
+# --- Contact and external links (edit these) ---
+contact_email: "TODO@oregonstate.edu"        # shared lab inbox, not a personal address
+pi_name: "Tianyi Chen, Ph.D."
+address: "TODO building and room, Oregon State University, Corvallis, OR"
+scholar_url: "https://scholar.google.com/TODO"
+linkedin_url: "https://www.linkedin.com/TODO"
+
+# Paste the share/embed link of your request form (Microsoft Forms,
+# Google Forms, Qualtrics, ...). Leave empty to show an email button instead.
+request_form_url: ""
+
+collections:
+  services:
+    output: true
+    permalink: /services/:name/
+
+defaults:
+  - scope: { path: "", type: services }
+    values: { layout: service }
+  - scope: { path: "" }
+    values: { layout: default }
+
+markdown: kramdown
+exclude: [README.md, CLAUDE.md, tools/]

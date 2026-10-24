@@ -1,0 +1,19 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">{{ site.title }}</span>
+      <span class="brand-sub">Oregon State University</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <ul>
+      {%- for item in site.data.nav %}
+        {%- capture href %}{% include link.html url=item.url %}{% endcapture %}
+        <li><a href="{{ href | strip }}"{% if item.external %} target="_blank" rel="noopener"{% endif %}{% if page.url contains item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {%- endfor %}
+      </ul>
+      <a class="btn btn-primary nav-cta" href="{{ '/request/' | relative_url }}">Request a quote</a>
+    </nav>
+  </div>
+</header>

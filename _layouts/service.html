@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<article class="wrap service">
+  <p class="crumb"><a href="{{ '/services/' | relative_url }}">Services</a></p>
+  <header class="service-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+    <p class="service-meta">{% include status.html status=page.status %}{% if page.status_note != "" %} <span class="status-note">{{ page.status_note }}</span>{% endif %}</p>
+    <p class="instrument">{{ page.instrument }}</p>
+  </header>
+
+  {% if page.image != "" %}
+  <figure class="service-figure"><img src="{{ page.image | relative_url }}" alt="{{ page.title }} at the ATOM Lab"></figure>
+  {% endif %}
+
+  <div class="service-grid">
+    <section>
+      <h2>Questions this answers</h2>
+      <ul class="answers">
+        {% for q in page.answers %}<li>{{ q }}</li>{% endfor %}
+      </ul>
+      {{ content }}
+    </section>
+
+    <section>
+      <h2>Capabilities</h2>
+      <dl class="specs">
+        {% for s in page.specs %}<div><dt>{{ s[0] }}</dt><dd>{{ s[1] }}</dd></div>{% endfor %}
+      </dl>
+    </section>
+
+    <section>
+      <h2>Samples</h2>
+      <p>{{ page.samples }}</p>
+      <h2>Turnaround</h2>
+      <p>{{ page.turnaround }}</p>
+      <h2>Pricing</h2>
+      <p>Oregon State University bills external users at approved rates for academic, government and industry customers. Send us your sample details and we will reply with a quote.</p>
+    </section>
+  </div>
+
+  <aside class="cta-band">
+    <p>Tell us about your samples and we will reply with a quote.</p>
+    <a class="btn btn-primary" href="{{ '/request/' | relative_url }}?service={{ page.title | url_encode }}">Request a quote</a>
+  </aside>
+</article>

@@ -1,0 +1,15 @@
+# Top navigation. "external: true" opens in a new tab.
+- title: Services
+  url: /services/
+- title: How it works
+  url: /how-it-works/
+- title: Research
+  url: /research/
+- title: People
+  url: /people/
+- title: Publications
+  url: SCHOLAR        # filled in from scholar_url in _config.yml
+  external: true
+- title: News
+  url: LINKEDIN       # filled in from linkedin_url in _config.yml
+  external: true
