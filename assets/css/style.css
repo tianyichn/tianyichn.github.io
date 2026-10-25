@@ -80,6 +80,7 @@ p, li { max-width: var(--measure); }
 
 /* Hero: a micrograph with an SEM-style data bar */
 .hero { display: grid; grid-template-columns: 5fr 6fr; gap: 3rem; align-items: center; padding-block: 3.5rem 2rem; }
+.hero h1 { font-size: clamp(1.75rem, 3vw, 2.4rem); }
 .micrograph { margin: 0; border: 1px solid var(--bar-bg); }
 .micrograph img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; filter: grayscale(1); }
 .databar {
