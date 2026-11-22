@@ -15,6 +15,7 @@ specs:
   - [Polishing, "NANO200DT grinder-polisher and GIGA-S vibratory polisher (EBSD-quality finish)"]
   - [Optical microscopy, "IM-5000 inverted microscope: bright field, dark field, polarized light, DIC"]
 samples: >-
-  TODO: accepted materials and sizes; whether hazardous or radioactive
-  samples can be prepared and under what conditions.
+  Tell us the material, sample size and the finish you need when you request
+  a quote, and we will confirm what we can prepare. Please say in advance if
+  a sample is hazardous or radioactive.
 ---

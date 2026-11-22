@@ -17,6 +17,7 @@ specs:
   - [Chemistry, "EDS point, line and map analysis with a Bruker XFlash 760 detector (60 mm², 129 eV)"]
   - [Ion beam, "Site-specific cross-sections, TEM lift-outs, micropillars and microcantilevers"]
 samples: >-
-  Solid, vacuum-compatible samples. TODO: maximum size, conductive coating
-  policy, and whether polished samples are required for EBSD.
+  Solid, vacuum-compatible samples. Tell us the material, size and surface
+  condition when you request a quote, and we will confirm how to prepare and
+  send them.
 ---

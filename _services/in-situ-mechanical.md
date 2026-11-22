@@ -18,6 +18,6 @@ specs:
   - [Larger specimens, "DEBEN MT200: up to 200 N; tension, compression, 3- and 4-point bending, ring pulling"]
   - [Strain mapping, "DIC on in-situ SEM images, including machine-learning displacement tracking"]
 samples: >-
-  TODO: what customers should send (bulk sample vs. pre-made specimens) and
-  whether you fabricate micro-specimens by FIB as part of the service.
+  Tell us the material and the test you have in mind when you request a
+  quote, and we will confirm the specimen form and what to send.
 ---

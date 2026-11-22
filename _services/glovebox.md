@@ -15,7 +15,7 @@ specs:
   - [Integrated instruments, "Simultaneous thermal analysis with mass spectrometry (see STA/MS)"]
   - [License, "Our labs are licensed to handle radioactive materials (ORE90005)"]
 samples: >-
-  Contact us before shipping any radioactive material. TODO: describe the
-  approval and transfer steps required by OSU (e.g. Radiation Safety review)
-  and any activity or isotope limits.
+  Contact us before shipping any radioactive material. Tell us the material,
+  its form and how sensitive it is to air or moisture when you request a
+  quote, and we will confirm how to send it.
 ---

@@ -17,6 +17,7 @@ specs:
   - [Evolved gas analysis, "Pfeiffer mass spectrometer, up to 300 amu"]
   - [Environment, "Housed with a nuclear-grade argon glovebox for sensitive samples"]
 samples: >-
-  TODO: sample mass and form, crucible options, and maximum temperature for
-  routine requests.
+  Tell us the material, sample form, temperature range and atmosphere you
+  need when you request a quote, and we will confirm sample size and crucible
+  options.
 ---
