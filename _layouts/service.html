@@ -14,15 +14,16 @@ layout: default
   <figure class="service-figure"><img src="{{ page.image | relative_url }}" alt="{{ page.title }} at the ATOM Lab"></figure>
   {% endif %}
 
-  <div class="service-grid">
-    <section>
-      <h2>Questions this answers</h2>
-      <ul class="answers">
-        {% for q in page.answers %}<li>{{ q }}</li>{% endfor %}
-      </ul>
-      {{ content }}
-    </section>
+  <section class="service-apps">
+    <h2>Applications</h2>
+    {% if page.applications_intro %}<p>{{ page.applications_intro }}</p>{% endif %}
+    <dl class="apps">
+      {% for a in page.applications %}<div><dt>{{ a[0] }}</dt><dd>{{ a[1] }}</dd></div>{% endfor %}
+    </dl>
+    {{ content }}
+  </section>
 
+  <div class="service-grid">
     <section>
       <h2>Capabilities</h2>
       <dl class="specs">

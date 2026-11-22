@@ -6,9 +6,14 @@ status: available
 status_note: ""
 image: ""
 instrument: Full metallographic preparation line
-answers:
-  - Can you prepare my sample for SEM, EBSD or nanoindentation?
-  - What does the microstructure look like under an optical microscope?
+applications_intro: "Preparation is the first step of most failure investigations and quality checks, and it is available as a service on its own."
+applications:
+  - ["Microstructure examination", "Grain size, phase distribution, inclusions and porosity under the optical microscope, to check that fabrication and heat treatment gave the intended structure."]
+  - ["Welds and joints", "Cross-sections through welds, brazes and diffusion bonds showing the fusion zone, heat-affected zone, penetration and defects."]
+  - ["Additively manufactured parts", "Sections showing porosity, lack of fusion, cracking and melt-pool structure along and across the build direction."]
+  - ["Coatings and surface layers", "Thickness and integrity of coatings, oxide scales and reaction layers, and the depth of corrosion or surface attack."]
+  - ["Failure analysis sectioning", "Precision cuts through a crack or defect that keep the evidence intact for microscopy."]
+  - ["Surfaces for advanced analysis", "Damage-free finishes for EBSD, nanoindentation and micromechanical testing, where preparation quality decides whether the measurement works."]
 specs:
   - [Cutting, "PICO 155P precision saw"]
   - [Mounting, "TP-7001B mounting press"]
