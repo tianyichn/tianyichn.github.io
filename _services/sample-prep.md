@@ -17,5 +17,4 @@ specs:
 samples: >-
   TODO: accepted materials and sizes; whether hazardous or radioactive
   samples can be prepared and under what conditions.
-turnaround: TODO
 ---

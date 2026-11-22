@@ -13,7 +13,7 @@ built with Jekyll and hosted on GitHub Pages (no plugins, no build step to run y
 | To change… | Edit |
 |---|---|
 | Email, address, Scholar/LinkedIn links, request form | `_config.yml` |
-| A service (specs, samples, turnaround, availability) | `_services/<name>.md` |
+| A service (specs, samples, availability) | `_services/<name>.md` |
 | Mark an instrument down or limited | `status:` and `status_note:` in its `_services` file |
 | Add a new service | copy a file in `_services/`, change `title` and `order` |
 | Group members and alumni | `_data/people.yml` |

@@ -18,5 +18,4 @@ samples: >-
   Contact us before shipping any radioactive material. TODO: describe the
   approval and transfer steps required by OSU (e.g. Radiation Safety review)
   and any activity or isotope limits.
-turnaround: TODO
 ---

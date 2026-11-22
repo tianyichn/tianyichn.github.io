@@ -20,5 +20,4 @@ specs:
 samples: >-
   TODO: what customers should send (bulk sample vs. pre-made specimens) and
   whether you fabricate micro-specimens by FIB as part of the service.
-turnaround: TODO
 ---

@@ -19,5 +19,4 @@ specs:
 samples: >-
   TODO: sample mass and form, crucible options, and maximum temperature for
   routine requests.
-turnaround: TODO
 ---

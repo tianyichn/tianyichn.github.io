@@ -19,5 +19,4 @@ specs:
 samples: >-
   Solid, vacuum-compatible samples. TODO: maximum size, conductive coating
   policy, and whether polished samples are required for EBSD.
-turnaround: TODO, e.g. typically 1–2 weeks after samples arrive
 ---
