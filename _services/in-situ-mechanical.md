@@ -13,7 +13,7 @@ applications:
   - ["Environmental degradation", "Measures hardening, embrittlement and loss of toughness after irradiation, thermal aging, oxidation, corrosion or hydrogen pickup, including in affected layers only micrometers deep."]
   - ["Coatings, claddings and interfaces", "Strength, toughness and adhesion of coatings, diffusion bonds, reaction layers and multilayer structures, such as coated fuel cladding, coated-particle fuel layers and thermal barrier coatings."]
   - ["Small, scarce or radioactive material", "Mechanical data from micrometer- to millimeter-scale specimens when only a small volume exists: irradiated or surveillance material, a failed part, a weld or a development batch."]
-  - ["Performance at temperature", "Tests up to 800 °C show how strength, deformation and fracture change at service temperature, with stress relaxation tests for creep behavior."]
+  - ["Performance at temperature", "Tests up to 800 °C show how strength, deformation and fracture change at service temperature, with stress relaxation and creep tests."]
   - ["Data for models", "Local properties and full-field strain maps to calibrate and validate crystal-plasticity, finite-element and fuel performance models."]
 specs:
   - [Nanomechanics, "FemtoTools FT-NMT04: 500 pN force and 50 pm displacement noise floor"]
