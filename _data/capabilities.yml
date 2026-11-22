@@ -1,0 +1,108 @@
+# Facilities shown on the Capabilities page, in order.
+# Photos live in assets/img/capabilities/. "service" is the file name (without .md)
+# of the matching page in _services/. "w" and "h" are each photo's pixel size.
+# "examples" are result figures (in assets/img/showcase/) shown under the lab.
+# An example with "anim" plays that animation; "src" is the still image shown
+# to visitors who have asked their device to reduce motion.
+- title: Nuclear Metallurgy Lab
+  summary: >-
+    Where samples are received, sectioned, mounted and polished. Set up for
+    radioactive materials and used equally for non-radioactive work.
+  equipment:
+    - "<b>Sample preparation:</b> precision saw, hot mounting press, grinder-polisher and vibratory polisher, giving mirror-finish surfaces for SEM, EBSD and nanomechanical testing."
+    - "<b>Inverted metallurgical microscope:</b> bright-field, dark-field, polarized light and differential interference contrast."
+  photos:
+    - { src: sample-prep.jpg, w: 396, h: 158, alt: "Precision saw, mounting press and grinder-polisher on the sample preparation bench" }
+  links:
+    - { service: sample-prep, text: "Sample preparation service" }
+
+- title: Quanta 3D SEM/FIB
+  summary: >-
+    Our own dual-beam system, combining a scanning electron microscope with a
+    focused ion beam, for imaging, analysis and micro-milling of radioactive
+    and non-radioactive samples. Recently fitted with current-generation
+    Bruker EDS and EBSD detectors, which map chemistry and crystal
+    orientation together in a single scan.
+  equipment:
+    - "<b>SEM imaging</b> and <b>focused-ion-beam micro-milling</b>. FIB-prepared specimens go on to micromechanical testing or TEM."
+    - "<b>EDS, Bruker XFlash 760:</b> a silicon drift detector with a 60 mm² active area and 129 eV energy resolution. The large area collects more X-rays, so element maps are faster and remain usable at the low beam currents that beam-sensitive samples need. Its pulse processor is rated for up to 1,000,000 counts per second."
+    - "<b>EBSD, Bruker e-Flash Generation II:</b> a high-performance detector with a 34 × 25.5 mm phosphor screen. Its tapered nose lets EBSD and EDS be collected at the same time, and it supports 12-bit patterns for high-resolution EBSD and transmission Kikuchi diffraction (TKD) on thin samples."
+    - "<b>Combined analysis:</b> EDS-assisted phase identification; orientation and phase maps; grain size, shape and boundary character; local misorientation (KAM and GAM); Schmid factor maps; and texture as pole figures and orientation distribution functions."
+  photos:
+    - { src: sem-fib.jpg, w: 256, h: 359, alt: "Quanta 3D SEM/FIB dual-beam microscope" }
+  links:
+    - { service: sem-fib, text: "SEM/FIB service" }
+  examples:
+    - src: /assets/img/showcase/fractography.jpg
+      w: 2400
+      h: 951
+      alt: A stitched electron microscope map of a whole fracture surface above three close-ups at increasing magnification
+      caption: >-
+        Fractography. A stitched high-resolution map of a whole fracture
+        surface, from the notch through crack propagation (top), with
+        close-ups at 500×, 1,750× and 5,000× that reveal the toughening
+        mechanisms: crack deflection, bridging and non-cleavage fracture of
+        particles.
+
+- title: Multiscale Mechanical Testing Lab
+  summary: >-
+    In-situ testing inside the SEM, so that deformation and fracture are
+    watched as they happen and tied directly to the measured load and
+    displacement.
+  equipment:
+    - "<b>FemtoTools FT-NMT04:</b> tests microscale specimens with isolated microstructure. Noise floor of 500 pN in force and 50 pm in displacement; testing up to 800 °C."
+    - "<b>Continuous stiffness measurement</b> with MEMS sensing detects the onset of plasticity and fracture initiation."
+    - "<b>DEBEN MT200:</b> loads up to 200 N in load or displacement control (0.1–1 mm/min), correlating deformation with the load–displacement curve."
+    - "<b>In-house grips</b> for tension, compression, three- and four-point bending and ring pulling."
+    - "<b>Micromechanical methods:</b> notched microcantilever bending for fracture toughness, microbeam bending for elastic and yield behavior at chosen crystal orientations, micropillar compression for critical resolved shear stress, and high-resolution hardness mapping."
+    - "<b>Full-field displacement and strain mapping</b> from the SEM image sequence, synchronized with the load–displacement curve."
+    - "<b>Modeling</b> to interpret the micromechanical data."
+  photos:
+    - { src: femtotools.jpg, w: 275, h: 203, alt: "FemtoTools FT-NMT04 micromechanical testing stage inside the SEM chamber" }
+    - { src: deben.jpg, w: 886, h: 466, alt: "DEBEN MT200 in-situ loading stage with in-house grips" }
+  links:
+    - { service: in-situ-mechanical, text: "In-situ mechanical testing service" }
+  examples:
+    - src: /assets/img/showcase/microcantilever-test.jpg
+      anim: /assets/img/showcase/microcantilever-test.webp
+      w: 1491
+      h: 620
+      alt: A notched microcantilever under an indenter tip, beside a plot of load and crack length against displacement
+      caption: >-
+        Microscale fracture test. A notched cantilever a few micrometers long
+        is bent inside the SEM while load (black) and crack length (red) are
+        recorded together, marking the point of crack initiation.
+    - src: /assets/img/showcase/mesoscale-strain.jpg
+      anim: /assets/img/showcase/mesoscale-test.webp
+      w: 1580
+      h: 560
+      alt: An electron microscope image of a crack growing from a notch, the matching strain map, and the force-displacement curve
+      caption: >-
+        Mesoscale fracture test. The SEM image, the strain map computed from
+        it, and the force–displacement curve, played in step through a whole
+        test from first loading to crack propagation.
+
+- title: Thermophysical Lab
+  summary: >-
+    Thermal analysis for environmentally sensitive materials, measured
+    without exposure to air or moisture.
+  equipment:
+    - "<b>Simultaneous thermal analysis (STA)</b> coupled with <b>mass spectrometry (MS)</b> for evolved-gas analysis."
+    - "<b>Inert argon glovebox</b> housing the STA–MS, so air- and moisture-sensitive samples are loaded and measured without exposure."
+    - "<b>In-situ calorimetry</b> of microstructure change, such as grain growth in nuclear fuel, across repeated heating cycles."
+  photos:
+    - { src: glovebox.jpg, w: 671, h: 395, alt: "Argon glovebox in the thermophysical lab" }
+    - { src: sta-ms.jpg, w: 398, h: 395, alt: "Simultaneous thermal analyzer installed inside the glovebox" }
+  links:
+    - { service: sta-ms, text: "STA/MS service" }
+    - { service: glovebox, text: "Glovebox testing service" }
+  examples:
+    - src: /assets/img/showcase/uo2-calorimetry.jpg
+      w: 2147
+      h: 560
+      alt: Electron micrographs of fine-grained and coarse-grained uranium dioxide either side of a calorimetry plot from four heating runs
+      caption: >-
+        Grain growth in UO₂ followed by in-situ calorimetry. The calorimetry
+        signal over four heating runs to 1000 °C (center), with the grain
+        structure before (left, 1 µm scale bar) and after (right, 40 µm scale
+        bar).

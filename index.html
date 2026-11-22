@@ -5,7 +5,7 @@ body_class: home
 <section class="hero wrap">
   <div class="hero-text">
     <h1>Understanding materials performance and failure to accelerate qualification and deployment</h1>
-    <p class="lede">At the Advanced Thermophysical and Operando Mechanics (ATOM) Lab, we combine electron microscopy, in-situ mechanical testing, and thermophysical analysis to understand nuclear fuels, irradiated and radioactive materials, and air-sensitive or harsh-environment materials.</p>
+    <p class="lede">At the Advanced Thermophysical and Operando Mechanics (ATOM) Lab, we combine electron microscopy, in-situ mechanical testing, and thermophysical analysis to show how materials behave under real operating conditions. We specialize in nuclear fuels and irradiated or radioactive materials, and bring the same instruments and rigor to metals, ceramics, and air-sensitive materials for energy, aerospace, and manufacturing.</p>
     <p class="actions">
       <a class="btn btn-primary" href="{{ '/request/' | relative_url }}">Request a quote</a>
       <a class="btn" href="{{ '/services/' | relative_url }}">Browse services</a>
@@ -13,13 +13,18 @@ body_class: home
     </p>
   </div>
   <figure class="micrograph">
-    <img src="{{ '/assets/img/hero.jpg' | relative_url }}" alt="Grain structure of a polycrystalline metal">
+    <div class="montage">
+      <img src="{{ '/assets/img/hero-montage.jpg' | relative_url }}" width="1600" height="900" alt="Three electron microscope images: a color displacement map around a notch tip, a micrometer-scale cantilever bent by an indenter, and the grain structure of uranium dioxide fuel">
+      <img class="montage-anim" src="{{ '/assets/img/hero-cantilever.webp' | relative_url }}" width="692" height="446" alt="" aria-hidden="true">
+      <span class="montage-label m1">Displacement field at a notch tip</span>
+      <span class="montage-label m2">Microcantilever fracture test</span>
+      <span class="montage-label m3">UO₂ fuel microstructure</span>
+    </div>
     <figcaption class="databar" aria-label="Key capabilities">
       <span><b>In-situ SEM testing</b> to 800 °C</span>
       <span><b>STA/MS</b> to 1600 °C</span>
-      <span><b>Argon glovebox</b> nuclear-grade</span>
+      <span><b>Argon glovebox</b> for air-sensitive samples</span>
       <span><b>Licensed</b> for radioactive materials</span>
-      <span class="scalebar" aria-hidden="true"><i></i>20 µm</span>
     </figcaption>
   </figure>
 </section>
@@ -43,16 +48,16 @@ body_class: home
 <section class="wrap block steps-block">
   <h2>How it works</h2>
   <ol class="steps">
-    <li><b>Tell us what you need.</b> Describe your material, the measurement and your timeline.</li>
-    <li><b>Get a quote.</b> We confirm feasibility and send a quote, usually within TODO business days.</li>
+    <li><b>Tell us what you need.</b> Describe your material, the measurement and your timeline.<br><a href="{{ '/request/' | relative_url }}">Request a quote</a></li>
+    <li><b>Get a quote.</b> We confirm feasibility and send a quote, usually within 3 business days.</li>
     <li><b>Send samples.</b> We schedule the work once OSU has your purchase order or agreement.</li>
-    <li><b>Receive results.</b> Data and a short summary arrive by email; OSU invoices you.</li>
+    <li><b>Receive results.</b> We send data and a short summary by email and share the files through cloud storage; OSU invoices you.</li>
   </ol>
-  <p><a href="{{ '/how-it-works/' | relative_url }}">Shipping, radioactive samples and FAQ</a></p>
+  <p><a href="{{ '/how-it-works/' | relative_url }}">Shipping, sample requirements and FAQ</a></p>
 </section>
 
 <section class="wrap block research-teaser">
   <h2>Research</h2>
-  <p>We study how microstructure controls the mechanical and thermal performance of nuclear fuels and structural materials, from fundamental radiation effects to AI-assisted qualification of new materials.</p>
+  <p>We study how microstructure controls the mechanical and thermal performance of nuclear fuels and structural materials, from fundamental radiation effects to new in-situ testing methods.</p>
   <p><a href="{{ '/research/' | relative_url }}">Our research</a><br><a href="{{ site.scholar_url }}" target="_blank" rel="noopener">Publications</a></p>
 </section>

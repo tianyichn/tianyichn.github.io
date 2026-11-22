@@ -5,27 +5,71 @@ pi:
   role: Associate Professor, School of Nuclear Science and Engineering
   photo: ""
   bio: >-
-    TODO: two or three sentences on background and research interests.
-  email: TODO@oregonstate.edu
+    Tianyi Chen has been at Oregon State University since 2018. His research
+    in nuclear materials combines irradiation, microstructure analysis,
+    multiscale mechanical testing and molecular dynamics simulation to
+    support materials research and development. Before joining Oregon State,
+    he was a postdoctoral research associate in the Nuclear Materials Science
+    and Technology Group at Oak Ridge National Laboratory.
+  degrees:
+    - Ph.D. Nuclear Engineering, Texas A&M University (2015)
+    - M.S. Nuclear Engineering, Texas A&M University (2013)
+    - B.S. Physics, Peking University (2010)
+  office: "3451 SW Jefferson Way, Radiation Center, Corvallis, OR 97331"
+  email: tianyi.chen@oregonstate.edu
 
+# Students. "topic" is optional; leave "" to hide it.
 graduate:
-  - name: TODO Student Name
-    role: Ph.D. student
-    topic: TODO one-line research topic
+  - name: Jacob Sorensen
+    role: Graduate student
+    topic: ""
     photo: ""
-  - name: TODO Student Name
-    role: Ph.D. student
-    topic: TODO one-line research topic
+  - name: James Mackaman
+    role: Graduate student
+    topic: ""
+    photo: ""
+  - name: Golamur Rahman Khan
+    role: Graduate student
+    topic: ""
+    photo: ""
+  - name: Ian Ferguson
+    role: Graduate student
+    topic: ""
+    photo: ""
+  - name: Spencer Doran
+    role: Graduate student
+    topic: ""
     photo: ""
 
 undergraduate:
-  - name: TODO Student Name
+  - name: Jackson Jorgenson
     role: Undergraduate researcher
-    topic: TODO one-line project
+    topic: ""
+    photo: ""
+  - name: Nicholas Thomas
+    role: Undergraduate researcher
+    topic: ""
+    photo: ""
+  - name: Elias Michel
+    role: Undergraduate researcher
+    topic: ""
+    photo: ""
+  - name: Alexander Rhee
+    role: Undergraduate researcher
+    topic: ""
     photo: ""
 
-alumni: []
-# alumni:
-#   - name: Name
-#     degree: Ph.D. 2026
-#     now: Where they work now
+# Previous members. "note" is optional (e.g. "Ph.D. 2024, now at ..."); leave "" to show the name only.
+previous:
+  - name: Tzu-Yi (Zoe) Chang
+    linkedin: https://www.linkedin.com/in/tzu-yi-chang-zoe/
+    note: "Ph.D. 2025, then Idaho National Laboratory"
+  - name: Ana Valeria Garcia Caraveo
+    linkedin: https://www.linkedin.com/in/anavaleriagarciacaraveo/
+    note: "Ph.D. 2026, then Exponent"
+  - name: Gavin VandenBroeder
+    linkedin: https://www.linkedin.com/in/gavin-vandenbroeder/
+    note: "M.S. 2023, then BWXT"
+  - name: Mack Clark, P.E.
+    linkedin: https://www.linkedin.com/in/mack-clark-p-e-2a080bb8/
+    note: "M.S. 2021, then Framatome"

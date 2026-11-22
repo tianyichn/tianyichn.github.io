@@ -1,5 +1,5 @@
 ---
-title: Testing in a nuclear-grade glovebox
+title: Inert-atmosphere glovebox testing
 order: 4
 summary: Handling and testing of air-sensitive and radioactive materials under inert argon.
 status: available

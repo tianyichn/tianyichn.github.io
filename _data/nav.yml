@@ -1,6 +1,8 @@
 # Top navigation. "external: true" opens in a new tab.
 - title: Services
   url: /services/
+- title: Capabilities
+  url: /capabilities/
 - title: How it works
   url: /how-it-works/
 - title: Research

@@ -1,0 +1,62 @@
+{
+  "source_url": "https://fees.oregonstate.edu/Public/BrowseExternal.aspx",
+  "checked": "2026-11-21",
+  "items": [
+    {
+      "fee_id": 16300,
+      "label": "Scanning electron microscopy, including EBSD and EDS",
+      "pick": "high",
+      "rate": "$157.50",
+      "unit": "hour"
+    },
+    {
+      "fee_id": 16298,
+      "label": "Focused-ion-beam milling (added to the SEM rate while the ion beam is in use)",
+      "pick": "high",
+      "rate": "$51",
+      "unit": "hour"
+    },
+    {
+      "fee_id": 16260,
+      "label": "In-situ micromechanical testing in the SEM",
+      "pick": "high",
+      "rate": "$300",
+      "unit": "hour"
+    },
+    {
+      "fee_id": 16508,
+      "label": "TG/DSC-MS in the glovebox (crucibles not included)",
+      "pick": "high",
+      "rate": "$200",
+      "unit": "hour"
+    },
+    {
+      "fee_id": 16399,
+      "label": "Material and mechanical modeling (molecular dynamics, finite element, SRIM)",
+      "pick": "high",
+      "rate": "$3,000",
+      "unit": "simulation"
+    },
+    {
+      "fee_id": 16587,
+      "label": "Staff time: professor",
+      "role": "Professor",
+      "rate": "$210",
+      "unit": "hour"
+    },
+    {
+      "fee_id": 16587,
+      "label": "Staff time: graduate employee",
+      "role": "Graduate Employee",
+      "rate": "$125",
+      "unit": "hour"
+    },
+    {
+      "fee_id": 16587,
+      "label": "Staff time: undergraduate student employee",
+      "role": "Undergrad Student Employee",
+      "rate": "$24",
+      "unit": "hour"
+    }
+  ]
+}

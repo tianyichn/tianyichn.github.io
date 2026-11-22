@@ -1,0 +1,43 @@
+---
+title: Capabilities
+permalink: /capabilities/
+---
+<div class="wrap page">
+  <h1>Capabilities</h1>
+  <p class="lede">Our facilities take a material from as-received sample to measured properties: preparation, electron microscopy, in-situ mechanical testing and thermal analysis. We are licensed (ORE90005) to receive, process and ship radioactive materials, and we apply the same instruments to non-radioactive materials.</p>
+
+  {% for lab in site.data.capabilities %}
+  <section class="facility">
+    <div class="facility-text">
+      <h2>{{ lab.title }}</h2>
+      <p>{{ lab.summary }}</p>
+      <ul>
+        {% for line in lab.equipment %}<li>{{ line }}</li>
+        {% endfor %}
+      </ul>
+      {% if lab.links.size > 0 %}
+      <p class="facility-links">
+        {% for l in lab.links %}{% capture service_url %}/services/{{ l.service }}/{% endcapture %}<a href="{{ service_url | relative_url }}">{{ l.text }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+      </p>
+      {% endif %}
+    </div>
+    <div class="facility-media">
+      <div class="facility-photos">
+        {% for photo in lab.photos %}{% capture photo_url %}/assets/img/capabilities/{{ photo.src }}{% endcapture %}<img src="{{ photo_url | relative_url }}" alt="{{ photo.alt }}" width="{{ photo.w }}" height="{{ photo.h }}" style="flex: {{ photo.w | times: 100 | divided_by: photo.h }} 1 0" loading="lazy">
+        {% endfor %}
+      </div>
+      {% if lab.examples.size > 0 %}
+      <h3 class="facility-eg">Example results</h3>
+      {% for ex in lab.examples %}
+      {% include result-figure.html fig=ex %}
+      {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <div class="cta-band">
+    <p>Have a material or a measurement in mind?</p>
+    <a class="btn btn-primary" href="{{ '/request/' | relative_url }}">Request a quote</a>
+  </div>
+</div>

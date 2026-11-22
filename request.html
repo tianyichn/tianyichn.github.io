@@ -8,11 +8,17 @@ permalink: /request/
 
   <div class="request-grid">
     <div>
+      {% capture mailto %}mailto:{{ site.contact_email }}?subject=Service%20request&body=Name%20and%20organization%3A%0AUser%20type%20(academic%2C%20government%2C%20industry)%3A%0AService%20needed%3A%0AMaterial%3A%0ARadioactive%20(yes%2Fno%2C%20isotopes)%3A%0ANumber%20of%20samples%3A%0ADeadline%3A%0AFunding%20or%20PO%20status%3A%0A{% endcapture %}
       {% if site.request_form_url != "" %}
       <iframe class="request-form" src="{{ site.request_form_url }}" title="Service request form" loading="lazy"></iframe>
-      <p class="small">Form not loading? <a href="{{ site.request_form_url }}" target="_blank" rel="noopener">Open it in a new tab</a> or email <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>.</p>
+      <p class="small">Form not loading? <a href="{{ site.request_form_url }}" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+      <div class="request-email">
+        <h2>Prefer email?</h2>
+        <p>Send the same details to <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>.</p>
+        <p><a class="btn" href="{{ mailto }}">Email your request</a></p>
+      </div>
       {% else %}
-      <p><a class="btn btn-primary" href="mailto:{{ site.contact_email }}?subject=Service%20request&body=Name%20and%20organization%3A%0AUser%20type%20(academic%2C%20government%2C%20industry)%3A%0AService%20needed%3A%0AMaterial%3A%0ARadioactive%20(yes%2Fno%2C%20isotopes)%3A%0ANumber%20of%20samples%3A%0ADeadline%3A%0AFunding%20or%20PO%20status%3A%0A">Email your request</a></p>
+      <p><a class="btn btn-primary" href="{{ mailto }}">Email your request</a></p>
       <p class="small">This opens an email to {{ site.contact_email }} with the details we need already listed.</p>
       {% endif %}
     </div>

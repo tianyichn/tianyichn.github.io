@@ -16,15 +16,15 @@ baseurl: ""
 url: ""   # e.g. "https://atom-lab.github.io" (used for links in search results)
 
 # --- Contact and external links (edit these) ---
-contact_email: "TODO@oregonstate.edu"        # shared lab inbox, not a personal address
+contact_email: "tianyi.chen@oregonstate.edu"
 pi_name: "Tianyi Chen, Ph.D."
-address: "TODO building and room, Oregon State University, Corvallis, OR"
+address: "3451 SW Jefferson Way, Radiation Center, Corvallis, OR 97331"
 scholar_url: "https://scholar.google.com/citations?user=azm5kqEAAAAJ&hl=en&oi=ao"
-linkedin_url: "https://www.linkedin.com/TODO"
+linkedin_url: "https://www.linkedin.com/in/tianyi-chen-osu"
 
 # Paste the share/embed link of your request form (Microsoft Forms,
 # Google Forms, Qualtrics, ...). Leave empty to show an email button instead.
-request_form_url: ""
+request_form_url: "https://forms.cloud.microsoft/r/a7bbj2MM10"
 
 collections:
   services:

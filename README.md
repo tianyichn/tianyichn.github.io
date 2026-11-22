@@ -18,6 +18,8 @@ built with Jekyll and hosted on GitHub Pages (no plugins, no build step to run y
 | Add a new service | copy a file in `_services/`, change `title` and `order` |
 | Group members and alumni | `_data/people.yml` |
 | Research themes | `_data/research.yml` |
+| Labs and equipment on the Capabilities page | `_data/capabilities.yml` (photos in `assets/img/capabilities/`) |
+| Rates | run `python3 tools/update_rates.py --write` (reads the OSU fee book into `_data/rates.json`) |
 | Process, shipping, radioactive samples, FAQ | `how-it-works.md` |
 | Homepage image | replace `assets/img/hero.jpg` (16:9, shown in grayscale) |
 

@@ -1,17 +1,134 @@
 # Research themes shown on the Research page.
+# Each theme: title, lead (one line), summary, points (label + text),
+# figures (src, w, h in pixels, alt, caption) and partners.
 - title: Nuclear fuel
+  lead: Turning fuel qualification from trial and error into predictive science.
   summary: >-
-    TODO: one paragraph on fuel studies — which materials, which properties,
-    and why microstructure-level measurements matter for fuel performance.
-  image: ""
-- title: Fundamental radiation effects
+    Running fuel to higher burnup lowers the cost of nuclear energy, but only if
+    we can predict how that fuel cracks, fragments and releases fission gas, in
+    normal operation and in accidents. We isolate the mechanisms behind those
+    behaviors one at a time and turn them into data that fuel performance codes
+    can use.
+  points:
+    - label: Why it matters
+      text: >-
+        Fission gas release and fuel fragmentation limit fuel lifetime and
+        safety margins, yet they are still largely modeled empirically.
+        Mechanistic models shorten the path from a new fuel design to a
+        licensed one.
+    - label: Our expertise
+      text: >-
+        Separate-effects testing on surrogate fuel. Uranium dioxide made with
+        controlled grain size and porosity is ion irradiated to reproduce
+        high-burnup damage, then tested in our licensed laboratory without a
+        hot cell.
+    - label: Technical advances
+      text: >-
+        Micrometer-scale bending tests gave direct evidence that
+        radiation-induced grain subdivision and dislocations lower the
+        stiffness and fracture strength of UO₂ and move cracking to the grain
+        boundaries, while larger grains resist the damage better. Calorimetry
+        inside our glovebox follows grain growth in doped UO₂ as it happens,
+        supplying grain-boundary properties to phase-field and BISON models.
+  figures:
+    - src: /assets/img/showcase/uo2-calorimetry.jpg
+      w: 2147
+      h: 560
+      alt: Electron micrographs of fine-grained and coarse-grained uranium dioxide either side of a calorimetry plot from four heating runs
+      caption: >-
+        Grain growth in UO₂ followed by in-situ calorimetry: the calorimetry
+        signal over four heating runs (center), with the grain structure
+        before (left, 1 µm scale bar) and after (right, 40 µm scale bar).
+  partners: >-
+    With Idaho National Laboratory, Rensselaer Polytechnic Institute, the
+    University of Florida, Los Alamos National Laboratory and Argonne National
+    Laboratory. Supported by the DOE Nuclear Energy University Program.
+
+- title: Irradiation effects in fission and fusion materials
+  lead: Using ion irradiation as an analytical tool, not only a rapid screen.
   summary: >-
-    TODO: e.g. microscale fracture toughness of ion-irradiated tungsten and
-    how irradiation defects change local mechanical behavior.
-  image: ""
-- title: AI for mechanisms and materials qualification
+    Additively manufactured steels and fusion plasma-facing alloys cannot wait
+    decades for neutron data. Ion irradiation delivers the same damage in days,
+    but its high dose rate can point in the wrong direction. We pair
+    irradiation experiments with microscopy, micromechanical testing and rate
+    theory to say what the results mean for service in a reactor.
+  points:
+    - label: Why it matters
+      text: >-
+        A material that looks poor in an accelerated test may perform well in
+        a reactor, and the reverse. Knowing which is the difference between
+        qualifying a new material and discarding it.
+    - label: Our expertise
+      text: >-
+        Radiation damage from the defect scale to mechanical properties:
+        transmission electron microscopy of voids and dislocations, in-situ
+        tests on irradiated layers only micrometers deep, and scaling analysis
+        that carries ion results over to reactor dose rates.
+    - label: Technical advances
+      text: >-
+        For 3D-printed 304L stainless steel, we showed that the heavier void
+        swelling seen under ion irradiation is a dose-rate effect, and that
+        the same dislocation networks are predicted to suppress swelling at
+        reactor dose rates. For ductile-phase-toughened tungsten, we measured
+        hardness and fracture toughness phase by phase and found that the
+        tungsten embrittles while the ductile phase hardens far less, which
+        points alloy design toward the interface between them.
+  figures:
+    - src: /assets/img/showcase/microcantilever-test.jpg
+      anim: /assets/img/showcase/microcantilever-test.webp
+      w: 1491
+      h: 620
+      alt: A notched microcantilever under an indenter tip, beside a plot of load and crack length against displacement
+      caption: >-
+        At the microscale, load (black) and crack length (red) are recorded
+        together as a notched cantilever is bent, marking crack initiation.
+  partners: >-
+    With Pacific Northwest National Laboratory, Texas A&M University, and
+    Boise State University and the Center for Advanced Energy Studies.
+    Supported by DOE Fusion Energy Sciences and the Nuclear Science User
+    Facilities.
+
+- title: Advancing in-situ testing methods
+  lead: Getting properties that hold at engineering scale from microscopic volumes.
   summary: >-
-    TODO: e.g. machine-learning displacement tracking on in-situ SEM images,
-    and using local measurements to build mechanistic models that speed up
-    qualification of new materials.
-  image: ""
+    Irradiated, radioactive and scarce materials often offer only a few
+    micrometers of testable volume. We develop test and analysis methods that
+    extract fracture, strength and creep properties from specimens that small,
+    and that agree with what bulk tests would give.
+  points:
+    - label: Why it matters
+      text: >-
+        Small-scale tests cut the amount of radioactive material, the cost and
+        the time needed for a measurement, but only if the numbers can be
+        trusted beyond the microscale.
+    - label: Our expertise
+      text: >-
+        A suite of in-situ methods spanning micrometer cantilevers, beams and
+        pillars to millimeter-scale bend specimens, with full-field
+        displacement and strain mapping, high-resolution hardness mapping, and
+        modeling to interpret the results.
+    - label: Technical advances
+      text: >-
+        We extended continuous stiffness measurement to follow a crack as it
+        grows in a microcantilever, giving both initiation and propagation
+        toughness from a single test. At the mesoscale, strain maps
+        synchronized with the load curve show damage appearing at about half
+        the maximum load, cracks initiating where microcracks link up, and a
+        damage process zone of 100–200 µm around the crack tip. Our nanoindentation stress relaxation
+        method uses scaling analysis to obtain dislocation kinetics, and
+        yields a creep exponent for aluminum consistent with bulk creep
+        testing. The same indentation methods showed that chromium, more than
+        the number of elements, governs strength and creep resistance in
+        NiCoCr-family high-entropy alloys.
+  figures:
+    - src: /assets/img/showcase/mesoscale-fracture.jpg
+      w: 1596
+      h: 1411
+      alt: Force-displacement curves, electron microscope images and strain maps at three stages of a fracture test
+      caption: >-
+        One fracture test, three moments. The force–displacement curve (top),
+        the SEM image (middle) and the strain map computed from it (bottom),
+        as damage first appears, as the crack initiates, and as it propagates.
+  partners: >-
+    With Idaho National Laboratory, Pacific Northwest National Laboratory and
+    Clemson University.

@@ -13,8 +13,8 @@ answers:
   - Can you make a TEM lamella or micropillar from a specific site?
 specs:
   - [Imaging, "Secondary and backscattered electron imaging"]
-  - [Orientation mapping, "EBSD"]
-  - [Chemistry, "EDS point, line and map analysis"]
+  - [Orientation mapping, "EBSD with a Bruker e-Flash Generation II detector, with simultaneous EDS; transmission Kikuchi diffraction (TKD) on thin samples"]
+  - [Chemistry, "EDS point, line and map analysis with a Bruker XFlash 760 detector (60 mm², 129 eV)"]
   - [Ion beam, "Site-specific cross-sections, TEM lift-outs, micropillars and microcantilevers"]
 samples: >-
   Solid, vacuum-compatible samples. TODO: maximum size, conductive coating

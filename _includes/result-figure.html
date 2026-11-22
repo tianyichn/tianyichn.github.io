@@ -1,0 +1,12 @@
+{%- comment -%} One result figure. "fig" has src, w, h, alt, caption and optionally anim. {%- endcomment -%}
+<figure>
+  {% if include.fig.anim %}
+  <a href="{{ include.fig.anim | relative_url }}"><picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="{{ include.fig.src | relative_url }}">
+    <img src="{{ include.fig.anim | relative_url }}" alt="{{ include.fig.alt }}" width="{{ include.fig.w }}" height="{{ include.fig.h }}" loading="lazy">
+  </picture></a>
+  {% else %}
+  <a href="{{ include.fig.src | relative_url }}"><img src="{{ include.fig.src | relative_url }}" alt="{{ include.fig.alt }}" width="{{ include.fig.w }}" height="{{ include.fig.h }}" loading="lazy"></a>
+  {% endif %}
+  <figcaption>{{ include.fig.caption }}</figcaption>
+</figure>

@@ -1,0 +1,5 @@
+<dl class="theme-points">
+  {% for pt in include.theme.points %}<dt>{{ pt.label }}</dt>
+  <dd>{{ pt.text }}</dd>
+  {% endfor %}
+</dl>
